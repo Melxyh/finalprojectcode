@@ -23,9 +23,9 @@ nav a:hover {
   text-decoration: underline;
 }
 
-/* nav a:focus{
+nav a:focus{
   background-color: #e09832;
-} */
+} 
 
 .active{
   background-color: #e09832;
@@ -82,16 +82,17 @@ footer{
 /*restaurant page*/
 
 #asian, #mexican, #italian{
-  display: grid; 
+  display: none; 
   grid-template-columns: 1fr 1fr;
   margin: 10px;
 }
 
 /*cafe & bakery*/
 #cafe, #bakery{
-  display: grid; 
+  display: none; 
   grid-template-columns: 1fr 1fr;
   margin: 10px;
+  
 }
 
 .card{
@@ -115,6 +116,7 @@ img{
 }
 /* buttons styling */
 .button{
+  display: none;
   font-weight: bold;
   background-color: #db7441;
 }
@@ -124,13 +126,98 @@ body{
   background-color: bisque; /*change a color*/
 }
 
-/*ISHAN's HOMEPAGE CODE*/
+.removedisc {
+  display: none;
+}
+
+.linkdisc {
+  display: none;
+}
+
+@media only screen and (min-width: 700px) {
+  
+  .button{
+    display: none;
+    font-weight: bold;
+    background-color: #db7441;
+  }
+  .removedisc {
+    display: inherit;
+  }
+
+    /*restaurant page*/
+
+  #asian, #mexican, #italian{
+  display: grid; 
+  grid-template-columns: 1fr 1fr;
+  margin: 10px;
+  
+  }
+
+
+
+  /*cafe & bakery*/
+  #cafe, #bakery{
+  display: grid; 
+  grid-template-columns: 1fr 1fr;
+  margin: 10px;
+  
+  }
+
+  .card{
+    position:relative;
+    max-width: 500px;
+    margin: 10px;
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background: #ecc091;
+  }
+}
+
+@media only screen and (min-width: 1060px) {
+  .linkdisc {
+    display: inherit;
+  }
+  
+  .button{
+    display: inherit;
+    font-weight: bold;
+    background-color: #db7441;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*ISHAN's CODE*/
 
 .container {
   display: grid;
   grid-template-columns: auto;
   row-gap: 10px;
-  background-color: #ffe5e5;
+  background-color: bisque;
 }
 
 * {
@@ -143,7 +230,7 @@ body{
   margin-top: 20px;
   text-align: center;
   margin: 20px 10px 0px 10px;
-  background: white;
+  background: #f1ddc9;
   border: 3px black solid;
   padding-bottom: 10px;
 }
@@ -162,7 +249,7 @@ h1 {
   grid-row-start: 4;
   margin-left: 20px;
   margin-right: 20px;
-  background-color: white;
+  background-color: #f1ddc9;
   padding: 10px;
   border: 3px black solid;
 }
@@ -172,7 +259,7 @@ h1 {
   grid-row-start: 5;
   margin-left: 20px;
   margin-right: 20px;
-  background-color: white;
+  background-color: #f1ddc9;
   padding: 10px;
   border: 3px black solid;
 }
@@ -211,7 +298,7 @@ h1 {
   grid-row-start: 8;
   text-align: center;
   margin: 0px 10px 20px 10px;
-  background-color: white;
+  background-color: #f1ddc9;
   padding: 10px;
   border: 3px black solid;
 }
@@ -225,7 +312,7 @@ h1 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     row-gap: 10px;
-    background-color: #ffe5e5;
+    background-color: bisque;
   }
 
   .welcome {
@@ -257,7 +344,7 @@ h1 {
     margin-left: 20px;
     margin-right: 20px;
     padding: 10px;
-    background: white;
+    background: #f1ddc9;
     border: 3px solid black;
   }
 
@@ -268,7 +355,7 @@ h1 {
     margin-top: 10px;
     margin-right: 20px;
     padding: 10px;
-    background: white;
+    background: #f1ddc9;
     border: 3px solid black;
   
   }
@@ -293,7 +380,7 @@ h1 {
     text-align: left;
     margin: 180px 20px 20px 20px;
     padding: 10px;
-    background: white;
+    background: #f1ddc9;
     border: 3px solid black;
     border-top: 0px;
     border-bottom: 0px;
@@ -305,7 +392,7 @@ h1 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     row-gap: 10px;
-    background-color: #ffe5e5;
+    background-color: bisque;
   }
 
   .welcome {
@@ -352,7 +439,7 @@ h1 {
     margin-top: 0px;
     margin-right: 20px;
     padding: 10px;
-    background: white;
+    background: #f1ddc9;
     text-align: center;
     border: 3px solid black;
   
@@ -364,7 +451,7 @@ h1 {
     text-align: left;
     margin: 0px 20px 20px 20px;
     padding: 10px;
-    background: white;
+    background: #f1ddc9;
     border: 3px solid black;
     text-align: center;
 
@@ -469,4 +556,88 @@ h1 {
     width: 100%;
     height: 100%;
   }
+}
+
+/* CONTACT US */
+.contactcontainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+}
+
+.thankyou {
+  grid-column: 1 / span 2;
+  text-align: center;
+}
+
+.ishanimg {
+  position: relative;
+  grid-column-start: 1;
+  grid-row-start: 2;
+  max-height: 400px;
+  overflow: hidden;
+  max-width: 300px;
+}
+
+.ishanimg img {
+  width: 100%;
+  height: 100%;
+
+}
+
+.melimg {
+  position: relative;
+  grid-column-start: 2;
+  grid-row-start: 2;
+  max-height: 400px;
+  overflow: hidden;
+  max-width: 300px;
+}
+
+.melimg img {
+  width: 100%;
+  height: 100%
+}
+
+.ishan {
+  grid-column: 1;
+  padding: 5px;
+  text-align: center;
+  max-width: 400px;
+}
+
+.mel {
+  grid-column: 2;
+  padding: 5px;
+  text-align: center;
+  max-width: 400px;
+}
+
+/*contact form*/
+input[type=text], select, textarea {
+  width: 100%; 
+  padding: 10px; 
+  border: 3px solid black;
+  box-sizing: border-box; 
+  margin-top: 10px; 
+  margin-bottom: 20px; 
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #ecc091;
+  color: black;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #e09832;
+}
+
+.formcontainer {
+  border-radius: 5px;
+  padding: 20px;
 }
