@@ -2,29 +2,52 @@
 nav li{
   display:inline;
   padding-right:20px;
-
 }
 
-/* navigation bar aligned right*/
-nav{
+/* navigation bar alignment styling*/
+.navlinks{
   padding: 10px 0px 10px 0px;
   text-align: right;
 }
 
-/*navigation bar hover & visit style */
+nav{
+  padding-bottom: 10px;
+}
+
+/*navigation bar hover, visit, focus, etc. style */
 nav a:link, a:visited {
   text-decoration: none;
   color: black;
 }
-
 nav a:hover {
   text-decoration: underline;
+}
+
+/* nav a:focus{
+  background-color: #e09832;
+} */
+
+.active{
+  background-color: #e09832;
+  border: 5px solid #e09832;
+}
+/*nav bar styling */
+.navlinks{
+  display: flex;
+  flex-direction:row;
+  align-items: center;
+  justify-content: right;
+  padding: 20px 0;
+  background-color: #ecc091;
 }
 
 /* skip to content style */
 .skip a{
   position: absolute;
-  top: -20px;
+  top: -110px;
+  -webkit-transition: top 1s ease-out;
+  transition: top 1s ease-out;
+  background-color: #ecc091;
 }
   
 .skip a:focus{
@@ -32,23 +55,76 @@ nav a:hover {
   border: 2px solid #000000;
 }
 
-/*nav_links styling
-
-
-/* main class content styling -- to be finished */
-.intro{
-  text-align: center;
-}
-
-/* overall intro content id selector text & size styling */
+/*intro text styling */
 .introcontent{
   text-align: center;
-  padding: 0px 40px 0px 40px;
+}
+/*footer styling*/
+
+footer{
+  display: flex;
+  flex-direction:row;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0;
+  background-color: #ecc091;
+
 }
 
+/* flex & grid design for images & more in Restuarant & cafe and bakery */
 
+.gallery{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+}
+/*restaurant page*/
 
-/*ISHAN's CODE*/
+#asian, #mexican, #italian{
+  display: grid; 
+  grid-template-columns: 1fr 1fr;
+  margin: 10px;
+}
+
+/*cafe & bakery*/
+#cafe, #bakery{
+  display: grid; 
+  grid-template-columns: 1fr 1fr;
+  margin: 10px;
+}
+
+.card{
+  position:relative;
+  max-width: 500px;
+  margin: 10px;
+  padding: 5px;
+  display: flex;
+  flex-direction:row;
+  align-items: center;
+  justify-content: center;
+  background: #ecc091;
+}
+
+/* image sizing without stretch */
+
+img{
+  height: 250px;
+  width: 250px;
+  object-fit: cover;
+}
+/* buttons styling */
+.button{
+  font-weight: bold;
+  background-color: #db7441;
+}
+
+/*restaurant page overall styling styling*/
+body{
+  background-color: bisque; /*change a color*/
+}
+
+/*ISHAN's HOMEPAGE CODE*/
 
 .container {
   display: grid;
@@ -394,4 +470,3 @@ h1 {
     height: 100%;
   }
 }
-

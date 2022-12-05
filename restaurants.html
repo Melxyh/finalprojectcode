@@ -12,9 +12,9 @@
         <div class="skip"><a href="#main">Skip to Main Content</a></div><!--make sure all pages have a main section w/ id="main" so skip to main content can reach it-->
         <header>
             <nav>
-                <ul>
+                <ul class="navlinks">
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="restaurants.html">Restaurants</a></li>
+                    <li><a class="active" href="restaurants.html">Restaurants</a></li>
                     <li><a href="cafeandbakery.html">Cafe & Bakery</a></li>
                     <li><a href="contactus.html">Contact Us</a></li>
                 </ul>
@@ -28,92 +28,133 @@
             <div class="introcontent">
                 <h2>Welcome to the Restaurant-focused Foodie Guide!</h2>
                 <br>
-                <p>Here we documented some of the most famous restaurants in Ann Arbor based on cuisine type!</p>
+                <p>Here we documented some of the most famous restaurants in Ann Arbor based on 3 different cuisine types!</p>
                 <br>
                 <p>All the restaurants have a small bio and images for you to quickly find them on the streets :)</p>
                 <br>
             </div>
-            <div class="restaurant gallery">
-                <div class="flex_card">
-                    <div class="flex_image">
+            <div class="gallery">
+                <div class="card">
+                    <div class="image" id="asian">
                         <img src="images/kangs.jpeg" alt="Kang's Korean Restuarant Exterior: the infamous red walls and printed Korean Character." width="200"/>
                     </div>
-                    <!--remember to include description:
-                    <div class="flex_content">
-                        <p>type out content here</p>
-                    </div>-->
-                </div>
-                <div class="flex_card">
-                    <div class="flex_image">
-                        <img src="images/sadako.jpeg" alt="Sadako Japanese Restuarant Exterior: the black and white prints and white crane" width="200"/>
+                    <div class="content">
+                        <h4>Kang's Korean Restaurant</h4>
+                        <br>
+                        <p>Kang's Korean Restaurant is a classic homestyle Korean restuarant, offering Korean food made from over 30 years of experience. Some of their signature dishes include hot stone bibimbap and kalbi.</p>
+                        <br>
+                        <p>Kang's is located at the heart of Ann Arbor on South University Street, and you can view their menu below:</p>
+                        <button onclick="window.location.href='https://www.kangsannarbor.com/menu';" class="button">Kang's Menu</button>
                     </div>
-                    <!--remember to include description:
-                    <div class="flex_content">
-                        <p>type out content here</p>
-                    </div>-->
                 </div>
-                <div class="flex_card">
-                    <div class="flex_image">
+                <div class="card">
+                    <div class="image" id="asian">
+                        <img src="images/sadako.jpeg" alt="Sadako Japanese Restuarant Exterior: the black and white prints and white crane" height="200"/>
+                    </div>
+                    <div class="content">
+                        <h4>Sadako Japanese Restaurant</h4>
+                        <br>
+                        <p>Sadako Japanese Restaurant is a casual Japanese restaurant, offering Japanese dishes from sushi to bento boxes. They are known for high quality foods for low prices.</p>
+                        <br>
+                        <p>Sadako is also located at the heart of Ann Arbor on South University Street, and you can view their menu below:</p>
+                        <button onclick="window.location.href='https://www.sadakojapaneserestauranta2.com/menus';" class="button">Sadako's Menu</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="image" id="asian">
                         <img src="images/lancity.jpeg" alt="Lan City Noodles Restuarant Exterior: the small rounded street sign with its chinese and english printed name" width="200"/>
                     </div>
-                    <!--remember to include description:
-                    <div class="flex_content">
-                        <p>type out content here</p>
-                    </div>-->
+                    <div class="content">
+                        <h4>Lan City Noodles</h4>
+                        <br>
+                        <p>Lan City Noodles is a casual Chinese restaurant, offering authentic Chinese dishes from noodles to rices. Within Ann Arbor, Lan City is one of the most authentic Chinese restaurants.</p>
+                        <br>
+                        <p>Sadako is also located at the heart of Ann Arbor on South University Street, and you can view their homepage below:</p>
+                        <button onclick="window.location.href='https://www.lancitynoodles.com/';" class="button">Lan Homepage</button>
+                    </div>
                 </div>
-                <div class="flex_card">
-                    <div class="flex_image">
+                <div class="card">
+                    <div class="image" id="mexican">
                         <img src="images/condado.jpeg" alt="Condado Tacos Restuarant Interior: bustling crowds and vibrant colors with freestyle word art on the walls" width="200"/>
                     </div>
-                    <!--remember to include description:
-                    <div class="flex_content">
-                        <p>type out content here</p>
-                    </div>-->
+                    <div class="content">
+                        <h4>Condado Tacos Ann Arbor</h4>
+                        <br>
+                        <p>Condado Tacos is a casual Mexican restaurant, offering Mexican street-style dishes from tacos to bowls. Within the city of Ann Arbor, Condado Tacos provides well-known fusion Mexican fare.</p>
+                        <br>
+                        <p>Condado Taco is located on East Liberty Street, and you can view their menu below:</p>
+                        <button onclick="window.location.href='https://condadotacos.com/menu-food/';" class="button">Condado Menu</button>
+                    </div>
                 </div>
-                <div class="flex_card">
-                    <div class="flex_image">
+                <div class="card">
+                    <div class="image" id="mexican">
                         <img src="images/chapala.jpeg" alt="Chapala Mexican Restuarant Exterior: vibrant-colored logo printed on its window with outdoor seating" width="200"/>
                     </div>
-                    <!--remember to include description:
-                    <div class="flex_content">
-                        <p>type out content here</p>
-                    </div>-->
+                    <div class="content">
+                        <h4>Chapala Mexican</h4>
+                        <br>
+                        <p>Chapala Mexican Restuarant is a laid-back Mexican locale, offering authentic Mexican food like enchiladas. With unique Mexican beachside interiors, Chapala brings Mexican flares to AA.</p>
+                        <br>
+                        <p>Chapala is located on Main street, and you can view their menu below:</p>
+                        <button onclick="window.location.href='https://www.getchapala.com/dishes.php';" class="button">Chapala's Menu</button>
+                    </div>
                 </div>
-                <div class="flex_card">
-                    <div class="flex_image">
+                <div class="card">
+                    <div class="image" id="mexican">
                         <img src="images/isalita.jpeg" alt="Isalita Restuarant Exterior: chalk art written on wooden black boards for its outdoor seating" width="200"/>
                     </div>
-                    <!--remember to include description:
-                    <div class="flex_content">
-                        <p>type out content here</p>
-                    </div>-->
+                    <div class="content">
+                        <h4>Isalita, Ann Arbor</h4>
+                        <br>
+                        <p>Isalita is a Mexican locale restuarant with modern rustic feels, offering street-style Mexican food like tacos. With afforadable food and drinks, Isalita is another great Mexican restuarant in AA with modern flares.</p>
+                        <br>
+                        <p>Chapala is located on East Libery street, and you can view their menu below:</p>
+                        <button onclick="window.location.href='https://maniosteria.com/wp-content/uploads/sites/2/2022/12/ISA_Menu_Dinner_111622.pdf';" class="button">Isalita's Menu</button>
+                    </div>
                 </div>
-                <div class="flex_card">
-                    <div class="flex_image">
+                <div class="card">
+                    <div class="image" id="italian">
                         <img src="images/mani.webp" alt="Mani Osteria & Bar Restuarant Exterior: Holiday art and festival prints on its windows" width="200"/>
                     </div>
-                    <!--remember to include description:
-                    <div class="flex_content">
-                        <p>type out content here</p>
-                    </div>-->
+                    <div class="content">
+                        <h4>Mani Osteria and Bar</h4>
+                        <br>
+                        <p>Mani Osteria and Bar is an up-scale Italian eatery with modern rustic feels, offering street-style Mexican food like tacos and enchiladas. Located in the center of Ann Arbor's food district, Mani is always bustling.</p>
+                        <br>
+                        <p>Mani is also located on East Libery street, and you can view their menu below:</p>
+                        <button onclick="window.location.href='https://maniosteria.com/';" class="button">Mani's Menu</button>
+                    </div>
                 </div>
-                <div class="flex_card">
-                    <div class="flex_image">
+                <div class="card">
+                    <div class="image" id="italian">
                         <img src="images/palio.jpeg" alt="Palio Restuarant Exterior: blue and black overhead shades and art printed logos overwatching outdoor seating" width="200"/>
                     </div>
-                    <!--remember to include description:
-                    <div class="flex_content">
-                        <p>type out content here</p>
-                    </div>-->
+                    <div class="content">
+                        <h4>Palio Restaurant</h4>
+                        <br>
+                        <p>Palio Restaurant is an authentic Tuscan fine dining restaurant, offering country-side Italian dishes. With delicious food and drinks, Palio is a great Italian restuarant with an awesome atmosphere.</p>
+                        <br>
+                        <p>Palio is located on South Main street, and you can view their menu below:</p>
+                        <button onclick="window.location.href='https://paliorestaurant.com/ann-arbor-menu/';" class="button">Palio's Menu</button>
+                    </div>
                 </div>
-                <div class="flex_card">
-                    <div class="flex_image">
+                <div class="card">
+                    <div class="image" id="italian">
                         <img src="images/doms.jpeg" alt="Casa Dominick's Restuarant Exterior: infamous green and red wooden house surrounded with tall trees and outdoor patio seating" width="200"/>
                     </div>
-                    <!--remember to include description:
-                    <div class="flex_content">
-                        <p>type out content here</p>
-                    </div>-->
+                    <div class="content">
+                        <h4>Casa Dominick's</h4>
+                        <br>
+                        <p>Casa Dominick's is a laid-back Italian restaurant with traditional Italian eats & pizza, offering ranges of food and drinks. With an unique exterior interior, Dom's is a fun Italian eatery with an awesome vibe.</p>
+                        <br>
+                        <p>Dom's is located on Monroe street, and you can view their menu below:</p>
+                        <button onclick="window.location.href='https://casa-dominicks.business.site/?m=true#menu';" class="button">Dom's Menu</button>
+                    </div>
                 </div>
             </div>
         </main>
+        <footer>
+            <p style="font-style:italic">Guide for Ann Arbor Foodies by Melissa Han and Ishan Patel © 2022</p>
+        </footer>
+    </body>
+</html>
