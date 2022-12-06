@@ -29,8 +29,14 @@ nav a:focus{
 
 .active{
   background-color: #e09832;
-  border: 5px solid #e09832;
+  padding: 3px;
+  border: 2px solid bisque;
 }
+
+nav a{
+  text-decoration: underline;
+}
+
 /*nav bar styling */
 .navlinks{
   display: flex;
@@ -59,8 +65,8 @@ nav a:focus{
 .introcontent{
   text-align: center;
 }
-/*footer styling*/
 
+/*footer styling*/
 footer{
   display: flex;
   flex-direction:row;
@@ -79,20 +85,9 @@ footer{
   align-items: center;
   justify-content: space-evenly;
 }
-/*restaurant page*/
 
-#asian, #mexican, #italian{
-  display: none; 
-  grid-template-columns: 1fr 1fr;
-  margin: 10px;
-}
-
-/*cafe & bakery*/
-#cafe, #bakery{
-  display: none; 
-  grid-template-columns: 1fr 1fr;
-  margin: 10px;
-  
+.content{
+  padding-left: 10px;
 }
 
 .card{
@@ -102,6 +97,7 @@ footer{
   padding: 5px;
   display: flex;
   flex-direction:row;
+  flex-grow: 0;
   align-items: center;
   justify-content: center;
   background: #ecc091;
@@ -123,7 +119,7 @@ img{
 
 /*restaurant page overall styling styling*/
 body{
-  background-color: bisque; /*change a color*/
+  background-color: bisque;
 }
 
 .removedisc {
@@ -131,6 +127,10 @@ body{
 }
 
 .linkdisc {
+  display: none;
+}
+
+.image{
   display: none;
 }
 
@@ -145,23 +145,8 @@ body{
     display: inherit;
   }
 
-    /*restaurant page*/
-
-  #asian, #mexican, #italian{
-  display: grid; 
-  grid-template-columns: 1fr 1fr;
-  margin: 10px;
-  
-  }
-
-
-
-  /*cafe & bakery*/
-  #cafe, #bakery{
-  display: grid; 
-  grid-template-columns: 1fr 1fr;
-  margin: 10px;
-  
+  .image{
+    display: inherit;
   }
 
   .card{
@@ -187,29 +172,11 @@ body{
     font-weight: bold;
     background-color: #db7441;
   }
+
+  .content{
+    min-height: 350px;
+  }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /*ISHAN's CODE*/
 
@@ -230,8 +197,7 @@ body{
   margin-top: 20px;
   text-align: center;
   margin: 20px 10px 0px 10px;
-  background: #f1ddc9;
-  border: 3px black solid;
+  background: #ecc091;
   padding-bottom: 10px;
 }
 
@@ -249,9 +215,8 @@ h1 {
   grid-row-start: 4;
   margin-left: 20px;
   margin-right: 20px;
-  background-color: #f1ddc9;
+  background-color: #ecc091;
   padding: 10px;
-  border: 3px black solid;
 }
 
 .aboutus {
@@ -259,9 +224,8 @@ h1 {
   grid-row-start: 5;
   margin-left: 20px;
   margin-right: 20px;
-  background-color: #f1ddc9;
+  background-color: #ecc091;
   padding: 10px;
-  border: 3px black solid;
 }
 
 .img1 {
@@ -271,7 +235,6 @@ h1 {
   max-height: 400px;
   overflow: hidden;
   margin: 20px;
-  border: 3px solid black;
 }
 
 .img1 img {
@@ -286,7 +249,6 @@ h1 {
   max-height: 400px;
   overflow: hidden;
   margin: 20px;
-  border: 3px solid black;
 }
 
 .img2 img {
@@ -298,9 +260,8 @@ h1 {
   grid-row-start: 8;
   text-align: center;
   margin: 0px 10px 20px 10px;
-  background-color: #f1ddc9;
+  background-color: #ecc091;
   padding: 10px;
-  border: 3px black solid;
 }
 
 .food1, .food2, .food3, .food4, .food5, .food6 {
@@ -344,8 +305,7 @@ h1 {
     margin-left: 20px;
     margin-right: 20px;
     padding: 10px;
-    background: #f1ddc9;
-    border: 3px solid black;
+    background: #ecc091;
   }
 
   .aboutus {
@@ -355,9 +315,7 @@ h1 {
     margin-top: 10px;
     margin-right: 20px;
     padding: 10px;
-    background: #f1ddc9;
-    border: 3px solid black;
-  
+    background: #ecc091;
   }
 
   .img2 {
@@ -380,8 +338,7 @@ h1 {
     text-align: left;
     margin: 180px 20px 20px 20px;
     padding: 10px;
-    background: #f1ddc9;
-    border: 3px solid black;
+    background: #ecc091;
     border-top: 0px;
     border-bottom: 0px;
   }
@@ -439,9 +396,8 @@ h1 {
     margin-top: 0px;
     margin-right: 20px;
     padding: 10px;
-    background: #f1ddc9;
+    background: #ecc091;
     text-align: center;
-    border: 3px solid black;
   
   }
 
@@ -451,8 +407,7 @@ h1 {
     text-align: left;
     margin: 0px 20px 20px 20px;
     padding: 10px;
-    background: #f1ddc9;
-    border: 3px solid black;
+    background: #ecc091;
     text-align: center;
 
   }
@@ -464,7 +419,6 @@ h1 {
     position: relative;
     overflow: hidden;
     margin: 20px 10px 0px 20px;
-    border: 3px black solid;
   }
 
   .food1 img {
@@ -480,8 +434,6 @@ h1 {
     overflow: hidden;
     margin: 20px 10px 10px 20px;
     max-height: 300px;
-
-    border: 3px black solid;
   }
 
   .food2 img {
@@ -495,10 +447,7 @@ h1 {
     grid-row: 3 / 5;
     position: relative;
     overflow: hidden;
-    margin: 20px 20px 0px 20px;
-
-    border: 3px black solid;
-    
+    margin: 20px 20px 0px 10px;
   }
 
   .food3 img {
@@ -514,8 +463,6 @@ h1 {
     overflow: hidden;
     margin: 20px 20px 10px 20px;
     max-height: 300px;
-
-    border: 3px black solid;
   }
 
   .food4 img {
@@ -531,8 +478,6 @@ h1 {
     overflow: hidden;
     margin: 20px 20px 10px 20px;
     max-height: 300px;
-
-    border: 3px black solid;
   }
 
   .food5 img {
@@ -546,10 +491,8 @@ h1 {
     grid-row: 5 / 7;
     position: relative;
     overflow: hidden;
-    margin: 20px 20px 10px 20px;
+    margin: 20px 20px 10px 10px;
     max-height: 300px;
-
-    border: 3px black solid;
   }
 
   .food6 img {
